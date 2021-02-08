@@ -9,6 +9,14 @@ body{
 
 /* Typo */
 
+h1{
+  margin: 0;
+  font-size: 100px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000;
+}
+
 /* Bottoni */
 
 .btn{
@@ -34,8 +42,8 @@ body{
 /* Header Top */
 
 .header_top{
-  line-height: 50px;
-  height: 50px;
+  line-height: 70px;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -81,3 +89,44 @@ header nav a:visited{
 }
 
 /* Header Hero */
+
+.hero{
+  margin-top: 70px;
+  padding:30px 0;
+}
+
+.hero__img{
+  width: 100%;
+
+}
+
+
+
+/* MEDIA QUERY PER STYLE */
+
+/* Da 992 px in giù */
+@media screen and (max-width:992px){
+
+  h1{
+    font-size: 75px;
+  }
+}
+
+
+/* Da 768 px in giù */
+
+@media screen and (max-width:768px){
+
+  h1{
+    font-size: 60px;
+  }
+}
+
+/* Da 480 px in giù */
+
+@media screen and (max-width:480px){
+
+  h1{
+    font-size: 35px;
+  }
+}
