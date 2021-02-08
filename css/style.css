@@ -1,3 +1,83 @@
+
+/* Regole universali */
+
 body{
   font-family: 'Open Sans', sans-serif;
 }
+
+/* Mix */
+
+/* Typo */
+
+/* Bottoni */
+
+.btn{
+  border-radius: 0px;
+  color: #fff;
+  background-color: #000;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.burger_btn{
+  background-color: transparent;
+  line-height: normal;
+  border: none;
+  font-size: 14px;
+}
+/* Colori di Bg */
+
+.bg_white{
+  background-color: #fff;
+}
+
+/* Header Top */
+
+.header_top{
+  line-height: 50px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.logo_img{
+    height: 12px;
+}
+
+.main_nav, .secondary_nav{
+  display:inline-block;
+}
+
+header nav a{
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  padding-right: 18px;
+}
+
+header nav a:hover,
+header nav a:visited{
+  text-decoration: none;
+  color: #000;
+}
+
+.secondary_nav{
+  padding-left: 18px;
+}
+
+.lang_btn{
+  line-height: normal;
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  font-size: 10px;
+  font-weight: 600
+}
+
+/* Header Hero */
