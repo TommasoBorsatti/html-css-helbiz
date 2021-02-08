@@ -8,7 +8,7 @@ body{
 /* Mix */
 
 .small_container{
-  width: 60%;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -116,13 +116,17 @@ header nav a:visited{
 
 /* Main - sezione complessa */
 
-#sezione_complessa{
+.banner_box{
   background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  position: absolute;
 }
 
 .boxes_container{
-  padding-top: 400px;
+  padding-top: 175px;
 }
 
 .box  {
@@ -135,35 +139,28 @@ header nav a:visited{
   position: relative;
   left: calc(100% / 3);
   text-align:center;
-  background-image: url(../img/iphone-bg.png);
-  background-repeat: no-repeat;
-  position: center;
-  overflow: hidden;
-  border-radius: 12%;
 }
 
-.box_iphone::before{
+.box_iphone::after{
   background-image: url(../img/iphone-bg.png);
   background-repeat: no-repeat;
   background-position:  left
 }
 
 .box_iphone > img{
- width:100%;
  max-height: 520px;
-
+ max-width: 300px
 }
 
 .box_1{
   position: relative;
   right: calc(100% / 3);
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .box_2{
-  padding-bottom: 54px;
-  padding-left: 75px;
-
+  padding-bottom: 62px;
+  padding-left: 40px
 }
 
 
@@ -177,6 +174,7 @@ header nav a:visited{
   h1{
     font-size: 75px;
   }
+
 }
 
 
@@ -187,6 +185,15 @@ header nav a:visited{
   h1{
     font-size: 60px;
   }
+
+  .box {
+    display: block;
+    right: 0;
+    left:0;
+    width: 100%;
+    padding: 8px 12px;
+  }
+
 }
 
 /* Da 480 px in giù */
