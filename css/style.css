@@ -126,7 +126,7 @@ header nav a:visited{
 }
 
 .boxes_container{
-  padding-top: 175px;
+  padding-top: 194px;
 }
 
 .box  {
@@ -147,9 +147,17 @@ header nav a:visited{
   background-position:  left
 }
 
-.box_iphone > img{
+.iphone_bg > img{
  max-height: 520px;
  max-width: 300px
+}
+
+.iphone_bg{
+  width: 260px;
+  height: 520px;
+  background-image: url(../img/iphone-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .box_1{
@@ -162,8 +170,6 @@ header nav a:visited{
   padding-bottom: 62px;
   padding-left: 40px
 }
-
-
 
 
 /* MEDIA QUERY PER STYLE */
@@ -186,12 +192,13 @@ header nav a:visited{
     font-size: 60px;
   }
 
-  .box {
+  .box, .iphone_bg {
     display: block;
     right: 0;
     left:0;
     width: 100%;
     padding: 8px 12px;
+    background-image: none;
   }
 
 }
