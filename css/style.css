@@ -7,6 +7,11 @@ body{
 
 /* Mix */
 
+.small_container{
+  width: 60%;
+  margin: auto;
+}
+
 /* Typo */
 
 h1{
@@ -15,6 +20,14 @@ h1{
   font-weight: 700;
   margin-bottom: 30px;
   color: #000;
+}
+
+h2{
+  font-weight: bold;
+}
+
+h4{
+  font-weight: bold;
 }
 
 /* Bottoni */
@@ -45,6 +58,7 @@ h1{
   line-height: 70px;
   height: 70px;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
@@ -99,6 +113,59 @@ header nav a:visited{
   width: 100%;
 
 }
+
+/* Main - sezione complessa */
+
+#sezione_complessa{
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+}
+
+.boxes_container{
+  padding-top: 400px;
+}
+
+.box  {
+  display:inline-block;
+  width: calc(100% / 3);
+  vertical-align: bottom;
+}
+
+.box_iphone{
+  position: relative;
+  left: calc(100% / 3);
+  text-align:center;
+  background-image: url(../img/iphone-bg.png);
+  background-repeat: no-repeat;
+  position: center;
+  overflow: hidden;
+  border-radius: 12%;
+}
+
+.box_iphone::before{
+  background-image: url(../img/iphone-bg.png);
+  background-repeat: no-repeat;
+  background-position:  left
+}
+
+.box_iphone > img{
+ width:100%;
+ max-height: 520px;
+
+}
+
+.box_1{
+  position: relative;
+  right: calc(100% / 3);
+  padding-bottom: 40px;
+}
+
+.box_2{
+  padding-bottom: 54px;
+  padding-left: 75px;
+
+}
+
 
 
 
