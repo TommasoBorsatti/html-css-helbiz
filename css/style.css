@@ -12,6 +12,10 @@ body{
   margin: auto;
 }
 
+section{
+  margin: 30px 0;
+}
+
 /* Typo */
 
 h1{
@@ -29,6 +33,25 @@ h2{
 h4{
   font-weight: bold;
 }
+
+.product_box h4{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 15px 15px;
+}
+
+.product_box a{
+    font-size: 20px;
+    margin-bottom: 40px;
+
+}
+
+.product_box a:hover{
+  text-decoration: none;
+  color:#94D1EA
+}
+
 
 /* Bottoni */
 
@@ -106,7 +129,7 @@ header nav a:visited{
 
 .hero{
   margin-top: 70px;
-  padding:30px 0;
+  padding:30px 0 100px 0;
 }
 
 .hero__img{
@@ -171,6 +194,17 @@ header nav a:visited{
   padding-left: 40px
 }
 
+/* Main - sezione Main Products */
+
+.product_title{
+  max-height: 22px;
+}
+
+.product_img{
+  max-height: 250px;
+  width: auto;
+  margin: 40px 0;
+}
 
 /* MEDIA QUERY PER STYLE */
 
@@ -181,6 +215,16 @@ header nav a:visited{
     font-size: 75px;
   }
 
+  .product_link,
+  .product_img {
+    display: block;
+  }
+
+  .product_img{
+    max-height: 500px;
+    margin: auto;
+    margin-bottom: 90px;
+  }
 }
 
 
@@ -200,6 +244,11 @@ header nav a:visited{
     padding: 8px 12px;
     background-image: none;
   }
+
+  .product_img{
+    max-height: 200px;
+  }
+
 
 }
 
