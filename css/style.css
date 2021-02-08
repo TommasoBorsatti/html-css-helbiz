@@ -30,8 +30,17 @@ h2{
   font-weight: bold;
 }
 
+#mosaico h2{
+  font-size: 50px;
+  color: #fff;
+}
+
 h4{
   font-weight: bold;
+}
+
+p{
+  font-size: 18px;
 }
 
 .product_box h4{
@@ -73,6 +82,18 @@ h4{
 
 .bg_white{
   background-color: #fff;
+}
+
+.bg_grey{
+  background-color: #fafafa
+}
+
+.bg_light_blue{
+background-color: #51C8F5
+}
+
+.bg_yellow{
+background-color: #FFD30E
 }
 
 /* Header Top */
@@ -139,6 +160,10 @@ header nav a:visited{
 
 /* Main - sezione complessa */
 
+#sezione_complessa{
+  margin-bottom: 180px;
+}
+
 .banner_box{
   background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
@@ -190,7 +215,7 @@ header nav a:visited{
 }
 
 .box_2{
-  padding-bottom: 62px;
+  padding-bottom: 32px;
   padding-left: 40px
 }
 
@@ -206,7 +231,86 @@ header nav a:visited{
   margin: 40px 0;
 }
 
+/* Main - Sezione Mosaico */
+
+/* prima parte */
+
+.mosaico_primo{
+  padding: 0px 50px;
+}
+
+.logo_carpisa{
+  height: 20px;
+}
+
+.carpisa_title{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.carpisa_description{
+  padding:20px 0;
+  font-size: 20px;
+}
+
+/* seconda parte */
+
+.mosaico_secondo{
+  padding: 50px 0;
+}
+
+.mosaico_secondo .product_box{
+  padding: 35px 40px;
+  margin-bottom: 30px;
+}
+
+.mosaico_secondo img{
+  max-height: 350px
+}
+
+.mosaico_secondo h2{
+  padding-bottom: 50px
+
+}
+
+/* terza parte */
+
+.sezione_sfondo{
+  height: 630px;
+  padding: 20px 20px;
+  background-image: url(../img/scooter-banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.text_box{
+  width:45%;
+  position: absolute;
+  right:5%;
+  top:50%;
+  transform:translate(0, -50%);
+}
+
+.text_box h2{
+  font-size: 30px;
+}
+
+.text_box p,
+.text_box a{
+  color: #fff;
+}
+
 /* MEDIA QUERY PER STYLE */
+
+
+/* Da 1200 px in giù */
+@media screen and (max-width:1200px){
+
+  .mosaico_secondo img{
+    max-height: 250px
+  }
+
+}
 
 /* Da 992 px in giù */
 @media screen and (max-width:992px){
@@ -224,6 +328,15 @@ header nav a:visited{
     max-height: 500px;
     margin: auto;
     margin-bottom: 90px;
+  }
+
+  .mosaico_secondo img{
+    max-height: 200px
+  }
+
+  #mosaico h2{
+    font-size: 30px;
+    color: #fff;
   }
 }
 
@@ -249,6 +362,12 @@ header nav a:visited{
     max-height: 200px;
   }
 
+  .text_box{
+    width: 65%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
 
 }
 
@@ -258,5 +377,9 @@ header nav a:visited{
 
   h1{
     font-size: 35px;
+  }
+
+  .carpisa_img{
+    max-height: 200px
   }
 }
